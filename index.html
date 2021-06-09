@@ -4,7 +4,6 @@
 <title>test</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<script type="text/javascript" src="data.js"></script>
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 </head>
@@ -14,22 +13,19 @@
 -->
 <div id="principale">
 
+  <div id="containerEntete">
+	   <div class="logo">
+	  	 <img src="images/logo/Reservia@3x.png" width="100" alt="Reservia" />
+  	 </div>
 
-  <div id="containerEntete" class="containerEntete">
-
-	  <div class="logo">
-	  	<img src="images/logo/Reservia@3x.png" width="100" alt="Reservia" />
-  	</div>
-
-	  <div class="block_ancre">
+	   <div class="block_ancre">
 	    	<div><a href="#divListeHebergement">Hébergements</a></div>
 		  	<div><a href="#activite">Activités</a></div>
-	  </div>
+	   </div>
 
-		<div class="block_inscription">
+	   <div class="block_inscription">
 				<div><a href="#">S'inscrire</a></div>
-		</div>
-
+		 </div>
   </div>
 
 	<div id="paragrapheHaut">
@@ -90,14 +86,14 @@
 		  <div class="p_titreHebergement"><p>Hébergement à Marseille</p></div>
 	  </div>
 		<div id="divHebergementPop" class="divHebergementPop">
-			<div class="titreHebergementPop"><p>Les plus populaires</p></div>
-			<div class="iconHebergementPop"><i class="fas fa-chart-line"></i></div>
+			<div><p class="titreHebergementPop">Les plus populaires</p></div>
+			<div><i class="fas fa-chart-line"></i></div>
 		</div>
 	</div>
 
 	<div id="containerListeActivite">
-		<div id="divListeActivite" class="divListeHebergement">
-			<div class="p_titreActivite"><p>Activités à Marseille</p></div>
+		<div class="divListeActivite">
+			<p class="p_titreActivite">Activités à Marseille</p>
 		</div>
 	</div>
 

@@ -1,43 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600;700&display=swap');
 
-body{
+body {
 font-family: 'Raleway', sans-serif;
 font-weight: 100;
-margin: 20px;
-align-content: center;
+margin: 5px;
 }
 
-.principale {
-  max-width: 1280px;
-  margin: 0px;
+#principale {
+  width: 1000px;
+  margin: auto;
   background: white;
   padding: 10px;
-  text-align: center;
   align-content: center;
 }
 
 /*   Entete logo + ancre  */
 
-.containerEntete {
+#containerEntete {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
 }
 
 .logo {
   flex-flow: row wrap;
-  margin-right: 760px;
 }
 
 .block_ancre {
   display: flex;
   flex-wrap: wrap;
   order: 1;
-}
-
-.block_ancre > div{
-  display: flex;
-  flex-wrap: wrap;
-  height: 50px;
+  position: relative;
+  left:550px;
 }
 
 .block_ancre a {
@@ -62,7 +57,8 @@ align-content: center;
   display: flex;
   flex-wrap: wrap;
   order: 2;
-  height: 50px;
+  position: relative;
+  left:570px;
 }
 
 .block_inscription > div{
@@ -78,8 +74,7 @@ align-content: center;
   text-align: center;
   color: #0065FC;
   transition: all .15s;
-  margin-left: 30px;
-  margin-top :20px;
+
 }
 
 .block_inscription a:focus {
@@ -288,6 +283,8 @@ align-content: center;
 #containerListeHebergement {
   display: flex;
   flex-wrap: wrap;
+  margin:auto;
+  align-content: center;
 }
 
 #divListeHebergement {
@@ -297,7 +294,7 @@ align-content: center;
   padding: 25px;
   background: #F2F2F2;
   border-radius: 15px;
-  width: 700px;
+  width: 580px;
   margin-right: 20px;
 }
 
@@ -316,7 +313,7 @@ align-content: center;
   padding: 25px;
   background: #F2F2F2;
   border-radius: 15px;
-  width: 400px;
+  width: 300px;
 }
 
 #divHebergementPop > div {
@@ -325,7 +322,7 @@ align-content: center;
 
 .fa-chart-line {
   position: relative;
-  right:0px;
+  left:150px;
   top: 17px;
   color: #000000;
 }
@@ -348,15 +345,17 @@ align-content: center;
   flex-wrap: wrap;
 }
 
-#divListeActivite {
+.divListeActivite {
   display: flex;
   flex-wrap: wrap;
   font-weight: 600;
   padding: 25px;
   background: #ffffff;
   border-radius: 15px;
-  width: 100%;
-  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid 1px;
+  width: 1100px;
 }
 
 /*   Pied   */
@@ -366,6 +365,8 @@ align-content: center;
   flex-wrap: wrap;
   background: #F2F2F2;
   padding: 10px;
+  width: 980px;
+  margin: auto;
 }
 
 #pied > div {
@@ -392,7 +393,7 @@ align-content: center;
   color: #0065FC;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1000px) {
 
   body{
     font-family: 'Raleway', sans-serif;
@@ -401,12 +402,11 @@ align-content: center;
     align-content: center;
   }
 
-  .principale {
+  #principale {
     width: 600px;
-    margin: 0px;
+    margin: auto;
     background: white;
     padding: 10px;
-    text-align: center;
     align-content: center;
   }
 

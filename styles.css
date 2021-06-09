@@ -8,8 +8,8 @@ align-content: center;
 }
 
 .principale {
-  max-width: 960px;
-  margin: auto;
+  max-width: 1280px;
+  margin: 0px;
   background: white;
   padding: 10px;
   text-align: center;
@@ -21,12 +21,11 @@ align-content: center;
 .containerEntete {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .logo {
   flex-flow: row wrap;
-  margin-right: 700px;
+  margin-right: 760px;
 }
 
 .block_ancre {
@@ -38,7 +37,7 @@ align-content: center;
 .block_ancre > div{
   display: flex;
   flex-wrap: wrap;
-
+  height: 50px;
 }
 
 .block_ancre a {
@@ -63,6 +62,7 @@ align-content: center;
   display: flex;
   flex-wrap: wrap;
   order: 2;
+  height: 50px;
 }
 
 .block_inscription > div{
@@ -78,7 +78,8 @@ align-content: center;
   text-align: center;
   color: #0065FC;
   transition: all .15s;
-  margin: 20px;
+  margin-left: 30px;
+  margin-top :20px;
 }
 
 .block_inscription a:focus {
@@ -297,7 +298,7 @@ align-content: center;
   background: #F2F2F2;
   border-radius: 15px;
   width: 700px;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .p_titreHebergement {
@@ -338,47 +339,7 @@ align-content: center;
   right:-240px;
 }
 
-@media only screen and (max-width: 800px) {
 
-  .logo {
-    flex-flow: row wrap;
-    margin-right: 100px;
-  }
-
-  .block_ancre {
-    display: flex;
-    flex-wrap: wrap;
-    order: 2;
-  }
-  .block_inscription {
-    display: flex;
-    flex-wrap: wrap;
-    order: 1;
-  }
-
-  #divListeHebergement {
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: 600;
-    padding: 25px;
-    background: #F2F2F2;
-    border-radius: 15px;
-    width: 100%;
-    margin: 0 0 30px 0;
-
-  }
-
-  #divHebergementPop {
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: 600;
-
-    background: #F2F2F2;
-    border-radius: 15px;
-    width: 100%;
-  }
-
-}
 
 /*  liste hebergement   */
 
@@ -396,4 +357,104 @@ align-content: center;
   border-radius: 15px;
   width: 100%;
   margin-right: 30px;
+}
+
+/*   Pied   */
+
+#pied {
+  display: flex;
+  flex-wrap: wrap;
+  background: #F2F2F2;
+  padding: 10px;
+}
+
+#pied > div {
+  flex-flow: row wrap;
+  padding-right: 80px;
+}
+
+#pied p {
+  flex-flow: row wrap;
+  font-weight: 600;
+}
+
+#pied > div > a  {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  transition: all .15s;
+  line-height: 2em;
+}
+
+#pied a:hover {
+  color: #0065FC;
+}
+
+@media only screen and (max-width: 1280px) {
+
+  body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    margin: 5px;
+    align-content: center;
+  }
+
+  .principale {
+    width: 600px;
+    margin: 0px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+  }
+
+  .logo {
+    flex-flow: row wrap;
+    margin-right: 100px;
+  }
+
+  .block_ancre {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+  }
+  .block_inscription {
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  .block_inscription a  {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    background: #ffffff;
+    text-align: center;
+    color: #0065FC;
+    transition: all .15s;
+    margin-top: 20px;
+  }
+
+  #divListeHebergement {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    padding: 25px;
+    background: #F2F2F2;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  #divHebergementPop {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    background: #F2F2F2;
+    border-radius: 15px;
+    width: 100%;
+  }
+
 }

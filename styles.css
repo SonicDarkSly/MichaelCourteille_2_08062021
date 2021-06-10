@@ -290,7 +290,7 @@ margin: 5px;
   display: flex;
   flex-wrap: wrap;
   font-weight: 600;
-  padding: 25px;
+  padding: 15px;
   background: #F2F2F2;
   border-radius: 15px;
   width: 580px;
@@ -301,6 +301,31 @@ margin: 5px;
   flex-flow: row wrap;
   position: relative;
   top: 0px;
+}
+
+/*  liste items hebergement   */
+
+.blockHebergementItem {
+  display: flex;
+  flex-wrap: wrap;
+  background: #F2F2F2;
+  width: 100%;
+  margin-right: 0px;
+}
+
+.blockHebergementItem > div {
+  display: flex;
+  flex-wrap: wrap;
+  background: #F2F2F2;
+  width: 180px;
+  margin-right: 0px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.blockHebergementItem > div > img {
+  border-top-left-radius: 20px;
+  border-top-right-radius : 20px;
 }
 
 /*  liste hebergement populaire  */
@@ -336,15 +361,14 @@ margin: 5px;
 }
 
 
-
-/*  liste hebergement   */
+/*  liste Activite   */
 
 #containerListeActivite {
   display: flex;
   flex-wrap: wrap;
 }
 
-.divListeActivite {
+#divListeActivite {
   display: flex;
   flex-wrap: wrap;
   font-weight: 600;
@@ -379,7 +403,6 @@ margin: 5px;
 }
 
 #pied > div > a  {
-  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-decoration: none;
   text-align: center;
@@ -391,6 +414,10 @@ margin: 5px;
 #pied a:hover {
   color: #0065FC;
 }
+
+
+/*   Mobile version   */
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -406,8 +433,9 @@ margin: 5px;
     background: white;
     padding: 10px;
     align-content: center;
-    border: solid 3px;
   }
+
+/*   Entete logo + ancre  */
 
   .logo {
     flex-flow: row wrap;
@@ -432,6 +460,7 @@ margin: 5px;
     top:5px;
   }
 
+/*   Icone info recherche  */
 
   .fa-info {
     font-size: 10px;
@@ -443,7 +472,7 @@ margin: 5px;
     color: #0065FC;
   }
 
-
+/*   Hebergements + populaire*/
 
   #divListeHebergement {
     display: flex;
@@ -470,6 +499,8 @@ margin: 5px;
     top: 17px;
     color: #000000;
   }
+
+/*   Footer  */
 
   #pied {
     display: flex;

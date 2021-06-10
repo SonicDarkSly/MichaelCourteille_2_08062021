@@ -8,10 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 </head>
 <body>
-<!--
-
--->
 <div id="principale">
+
+<!-- Entete -->
 
   <div id="containerEntete">
 	   <div class="logo">
@@ -20,7 +19,7 @@
 
 	   <div class="block_ancre">
 	    	<div><a href="#divListeHebergement">Hébergements</a></div>
-		  	<div><a href="#containerListeActivite">Activités</a></div>
+		  	<div><a href="#divListeActivite">Activités</a></div>
 	   </div>
 
 	   <div class="block_inscription">
@@ -28,16 +27,22 @@
 		 </div>
   </div>
 
+<!-- Paragraphe presentation site -->
+
 	<div id="paragrapheHaut">
 		<p id="p_titre">Trouvez votre hébergement pour des vacances de rêve</p>
 		<p>En plein entre ville ou en pleine nature</p>
 	</div>
+
+<!-- Recherche -->
 
 	<div id="divRecherche" class="divRecherche">
 		<div><i class="fas fa-map-marker-alt"></i></div>
 		<div><input type="search" id="champsRecherche" class="champsRecherche" value="Marseille, France"/></div>
 		<div><input type="button" id="buttonRecherche" class="buttonRecherche" value="Rechercher" /></div>
 	</div>
+
+<!-- Filtres -->
 
   <div id="container_item_filtre">
 		    <div class="filtreTitre">
@@ -77,25 +82,43 @@
 				</div>
   </div>
 
+<!-- Info recherche -->
+
 	<div id="paragrapheInfoRecherche">
 		<i class="fas fa-info"></i><p class="p_InfoRecherche">Plus de 500 logements sont disponibles dans cette ville</p>
 	</div>
 
+<!-- Herbergements -->
+
   <div id="containerListeHebergement">
-	  <div id="divListeHebergement" class="divListeHebergement">
-		  <div class="p_titreHebergement"><p>Hébergement à Marseille</p></div>
+	  <div id="divListeHebergement">
+		  <div class="p_titreHebergement"><p>Hébergements à Marseille</p></div>
+      <div class="blockHebergementItem">
+
+        <div>
+          <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" width="100%"/><br />
+        </div>
+
+      </div>
 	  </div>
-		<div id="divHebergementPop" class="divHebergementPop">
+
+    <!-- Herbergements populaires -->
+
+		<div id="divHebergementPop">
 			<div><p class="titreHebergementPop">Les plus populaires</p></div>
 			<div><i class="fas fa-chart-line"></i></div>
 		</div>
 	</div>
 
+<!-- Activites -->
+
 	<div id="containerListeActivite">
-		<div class="divListeActivite">
+		<div id="divListeActivite">
 			<p class="p_titreActivite">Activités à Marseille</p>
 		</div>
 	</div>
+
+<!-- Footer -->
 
 	<div id="pied">
 		<div class="block_pied_apropos">

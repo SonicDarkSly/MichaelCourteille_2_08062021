@@ -19,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+
 /*   Entete logo + ancre  */
 
 
@@ -28,10 +29,11 @@ a {
   display: grid;
   align-items: center;
   margin: auto;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: "logo . navbar button";
 }
 .headerImg {
   grid-area: logo;
-  padding: 0 0rem;
   height: 2.813rem;
 }
 .headerNav {
@@ -48,29 +50,18 @@ a {
   border-bottom: 3px transparent solid;
 }
 .headerNavLink {
-  color: #0065FC;
+  color: #000000;
 }
 .headerNavLink:hover {
   color: #0065FC;
+  border-top: 3px solid #0065FC;
 }
 .headerSignup {
   display: flex;
   align-items: center;
   grid-area: button;
-  padding: 2rem;
   color: #0065FC;
   font-weight: 600;
-}
-
-.header {
-  grid-template-columns: auto 1fr auto auto;
-  grid-template-areas: "logo . navbar button";
-}
-.headerNavLink[data-active=true] {
-  border-top: 3px solid #0065FC;
-}
-.headerNavLink:hover {
-  border-top: 3px solid #0065FC;
 }
 
 
@@ -322,7 +313,7 @@ a {
   align-content: center;
   padding: 3px;
   border-radius: 20px;
-  box-shadow: 0 0 40px #0000002e;
+  box-shadow: 0 0 15px #bebebe;
 }
 
 .blockHebergementItemImg {
@@ -462,7 +453,7 @@ a {
   }
 
   #principale {
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
     background: white;
     padding: 10px;

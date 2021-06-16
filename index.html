@@ -12,38 +12,40 @@
 
 <!-- Entete -->
 
-  <div id="containerEntete">
-	   <div class="logo">
-	  	 <img src="styles/images/logo/Reservia@3x.png" width="100" alt="Reservia" />
-  	 </div>
-
-	   <div class="block_ancre">
-	    	<div><a href="#divListeHebergement">Hébergements</a></div>
-		  	<div><a href="#divListeActivite">Activités</a></div>
-	   </div>
-
-	   <div class="block_inscription">
-				<div><a href="#">S'inscrire</a></div>
-		 </div>
-  </div>
+  <header>
+   <div class="header">
+    <img class="headerImg" src="styles/images/logo/Reservia@3x.png" alt="Reservia" />
+    <nav class="headerNav">
+      <a class="headerNavLink" href="#divListeHebergement">Hébergement</a>
+      <a class="headerNavLink" href="#divListeActivite">Activités</a>
+    </nav>
+    <a class="headerSignup" href="#">S'inscrire</a>
+   </div>
+  </header>
 
 <!-- Paragraphe presentation site -->
 
+  <main>
+   <article>
 	<div id="paragrapheHaut">
 		<p id="p_titre">Trouvez votre hébergement pour des vacances de rêve</p>
 		<p>En plein entre ville ou en pleine nature</p>
 	</div>
+   </article>
 
 <!-- Recherche -->
 
+   <article>
 	<div id="divRecherche" class="divRecherche">
 		<div><i class="fas fa-map-marker-alt"></i></div>
-		<div><input type="search" id="champsRecherche" class="champsRecherche" value="Marseille, France"/></div>
+		<div><input type="text" id="champsRecherche" class="champsRecherche" value="Marseille, France"  /></div>
 		<div><input type="button" id="buttonRecherche" class="buttonRecherche" value="Rechercher" /></div>
 	</div>
-
+   </article> 
+ 
 <!-- Filtres -->
 
+  <article>
   <div id="container_item_filtre">
 		    <div class="filtreTitre">
           Filtres
@@ -52,7 +54,7 @@
 				  <div class="filtre">
 				    <a href="#">Economique</a>
 				    <div class="filtre_icon">
-              <i class="fas fa-money-bill-wave"></i>
+                      <i class="fas fa-money-bill-wave"></i>
 				    </div>
 				  </div>
 				</div>
@@ -60,7 +62,7 @@
 				  <div class="filtre">
 				    <a href="#">Familial</a>
 				    <div class="filtre_icon">
-              <i class="fas fa-child"></i>
+                     <i class="fas fa-child"></i>
 				    </div>
 				  </div>
 				</div>
@@ -68,7 +70,7 @@
 				  <div class="filtre">
 				    <a href="#">Romantique</a>
 				    <div class="filtre_icon">
-              <i class="fas fa-heart"></i>
+                     <i class="fas fa-heart"></i>
 				    </div>
 				  </div>
 				</div>
@@ -76,34 +78,36 @@
 				  <div class="filtre">
 				    <a href="#">Animaux autorisés</a>
 				    <div class="filtre_icon">
-              <i class="fas fa-dog"></i>
+                     <i class="fas fa-dog"></i>
 				    </div>
 				  </div>
 				</div>
   </div>
+ </article>
 
 <!-- Info recherche -->
 
-
+   <article>
 		<div class="searchResult">
 			<div class="searchResultWrapicon"><i class="fas fa-info searchResultWrapiconIcon"></i></div>
 			<p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
 		</div>
-
+	</article>   
 
 <!-- Herbergements -->
 
+  <article>
   <div id="containerListeHebergement">
 	  <div id="divListeHebergement">
 		<div class="p_titreHebergement"><p>Hébergements à Marseille</p></div>
 
         <div class="blockHebergementItem">
 
-          <div>
+          <div><a href="#">
                <img class="blockHebergementItemImg" src="styles/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" />
 			   <div class="itemBlockText">
 		         <p class="titreItem">Auberge la Cannebière</p>
-		         <p class="offreItem">Nuit à partir de <span style="font-weight: 600;">25€</span></p>
+		         <p class="offreItem">Nuit à partir de <span class="prixBold">25€</span></p>
 	             <p class="noteItem">
 			         <span class="noteItemBleu"><i class="fas fa-star"></i></span>
 			         <span class="noteItemBleu"><i class="fas fa-star"></i></span>
@@ -112,10 +116,10 @@
 			         <span class="noteItemGris"><i class="fas fa-star"></i></span>
 		         </p>
 			   </div>
-          </div>
+			</a></div>
 
 		  <div>
-			  <img src="styles/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" width="100%" />
+			  <img class="blockHebergementItemImg" src="styles/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" />
 			  <div class="itemBlockText">
 			    <p class="titreItem">Hôtel du port</p>
 			    <p class="offreItem">Nuit à partir de <span>52€</span></p>
@@ -130,7 +134,7 @@
 	      </div>
 
 	      <div>
-		     <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" width="100%" />
+		     <img class="blockHebergementItemImg" src="styles/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" />
 		     <div class="itemBlockText">
 		       <p class="titreItem">Hôtel Les mouettes</p>
 		       <p class="offreItem">Nuit à partir de <span>76€</span></p>
@@ -145,7 +149,7 @@
           </div>
 
 	      <div>
-			<img src="styles/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" width="100%" />
+			<img class="blockHebergementItemImg" src="styles/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" />
 			<div class="itemBlockText">
 			  <p class="titreItem">Hôtel de la mer</p>
 			  <p class="offreItem">Nuit à partir de <span>46€</span></p>
@@ -160,10 +164,10 @@
 		 </div>
 
 		 <div>
-			<img src="styles/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" width="100%" />
+			<img class="blockHebergementItemImg" src="styles/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" />
 			<div class="itemBlockText">
 			  <p class="titreItem">Hôtel Les mouettes</p>
-			  <p class="offreItem">Nuit à partir de <span style="font-weight: 600;">23€</span></p>
+			  <p class="offreItem">Nuit à partir de <span class="prixBold">23€</span></p>
 			  <p class="noteItem">
 				<span class="noteItemBleu"><i class="fas fa-star"></i></span>
 				<span class="noteItemBleu"><i class="fas fa-star"></i></span>
@@ -175,7 +179,7 @@
 		 </div>
 
 		 <div>
-			<img src="styles/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" width="100%" />
+			<img class="blockHebergementItemImg" src="styles/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" />
 			<div class="itemBlockText">
 			  <p class="titreItem">Hôtel Les mouettes</p>
 			  <p class="offreItem">Nuit à partir de <span>96€</span></p>
@@ -204,17 +208,22 @@
 			
 		</div>
 	</div>
+   </article>
 
 <!-- Activites -->
 
+   <article>
 	<div id="containerListeActivite">
 		<div id="divListeActivite">
 			<p class="p_titreActivite">Activités à Marseille</p>
 		</div>
 	</div>
+   </article>
 
 <!-- Footer -->
 
+
+   <footer>
 	<div id="pied">
 		<div class="block_pied_apropos">
       <p>A propos</p>
@@ -235,7 +244,8 @@
       <a href="#">Nous contacter</a><br />
     </div>
 	</div>
-
+   </footer>
+</main>
 </div>
 </body>
 </html>

@@ -42,16 +42,17 @@
   /* FILTRES */
 
   .filtres {
-    align-items: center;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .titre {
     font-size: 12px;
   }
-
+  
   .barreFiltre {
-    width: 30%;
+    width: auto;
+    margin-bottom: 10px;
   }
 
   .info {

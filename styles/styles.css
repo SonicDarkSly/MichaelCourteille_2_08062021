@@ -376,7 +376,9 @@ input {
 }
 
 .etoilespop {
-  margin: 30px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 /* PARAMETRES DE LA SECTION ACTIVITE */
 

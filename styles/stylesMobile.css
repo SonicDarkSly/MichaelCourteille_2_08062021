@@ -1,7 +1,7 @@
 
 /*RESPONSIVE MOBILES*/
 
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 200px) and (max-width: 768px) {
 
   /* PARAMETRES GENERAUX */
 
@@ -136,6 +136,7 @@
 
   .blocActivite {
     width: auto;
+  
   }
 
   .Activite img {
@@ -144,7 +145,7 @@
   }
 
   .Activite {
-    margin-bottom: 30%;
+    margin-bottom: 35%;
     height: 70px;
     -moz-margin-start: 62px;
   }

@@ -427,8 +427,15 @@ input {
   opacity: .5;
 }
 
+.activite1et1img {
+  height: 440px;
+}
+
 .activite1et4img {
-  height: 417px;
+  min-height: 436px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .activite2img {
@@ -444,7 +451,7 @@ input {
 }
 
 .activite6img {
-  height: 140px;
+  height: 160px;
 }
 
 .nomactivite {
@@ -456,7 +463,7 @@ input {
 }
 
 .Activite5 {
-  margin: 0px 0px 92px;
+  margin: 0px 0px 68px;
 }
 
 /* PARAMETRES DU FOOTER */
